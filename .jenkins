@@ -1,6 +1,7 @@
 pipeline
 {
 agent any
+
 stages 
 {
 stage('build')
@@ -11,7 +12,13 @@ bat "mvn test"
 }
 }
 
+stage('Deploy')
+{
+steps
+{
+bat "echo Deployment successful........."
 }
-
+}
+}
 
 }
