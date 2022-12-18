@@ -8,7 +8,7 @@ stage('build')
 {
 steps
 {
-bat "mvn test"
+bat "mvn clean"
 }
 }
 
@@ -19,6 +19,14 @@ steps
 bat "echo Deployment successful........."
 }
 }
+
+stage('Test')
+{
+steps
+{
+bat "mvn test"
+}
 }
 
+}
 }
