@@ -7,7 +7,6 @@ stage('build')
 {
 steps
 {
-cd D:\Github\FlipkartDemoGopi
 mvn test
 }
 }
