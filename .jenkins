@@ -7,7 +7,7 @@ stage('build')
 {
 steps
 {
-mvn test
+bat "mvn test"
 }
 }
 
