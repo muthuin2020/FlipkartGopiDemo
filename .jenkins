@@ -16,7 +16,7 @@ stage('Deploy')
 {
 steps
 {
-bat "echo Deployment successful........."
+bat "ech Deployment successful........."
 }
 }
 
