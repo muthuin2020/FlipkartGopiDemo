@@ -4,7 +4,7 @@ agent any
 
 stages 
 {
-stage('build')
+stage('Build')
 {
 steps
 {
@@ -28,5 +28,12 @@ bat "mvn test"
 }
 }
 
+stage('Release')
+{
+steps 
+{
+bat "echo found No major bugs and Release is successful..."
+}
+}
 }
 }
