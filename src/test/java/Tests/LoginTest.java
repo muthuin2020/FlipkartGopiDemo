@@ -20,6 +20,7 @@ public class LoginTest extends BaseClass{
 	@Test()
 	public void loginSuccessfull()
 	{
+		System.out.println("testing Flipkart..");
 		
 		driver.get("https://www.google.com");
 		System.out.println(driver.getTitle());
