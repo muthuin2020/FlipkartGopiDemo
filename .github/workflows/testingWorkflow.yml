@@ -6,6 +6,7 @@ on:
  workflow_dispatch:
  
 jobs:
+ testingWorkflow:
  runs-on: self-hosted
  build:
   steps:
