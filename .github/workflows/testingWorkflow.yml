@@ -3,6 +3,8 @@ name:  testing workflow
 on: 
  pull_request:
    branches: ["master"]
+ workflow_dispatch:
+   
 jobs:
  build:
   steps:
