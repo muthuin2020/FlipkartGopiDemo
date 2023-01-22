@@ -9,4 +9,5 @@ jobs:
  testingWorkflow:
   runs-on: self-hosted
   steps:
-   - run: echo "testing .." 
+   - name: Running command on PR
+     run: mvn clean test
