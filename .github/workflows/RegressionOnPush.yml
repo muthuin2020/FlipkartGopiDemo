@@ -1,7 +1,7 @@
 name: Regression on Push
 on:
   push: 
-   branches: ["master"]
+   branches: [  "master" ]
 jobs:
 steps:
   - uses: actions/checkou@v3
