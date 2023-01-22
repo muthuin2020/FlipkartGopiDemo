@@ -1,0 +1,12 @@
+name: Run on Pull request to master
+
+on: 
+ pull_request:
+   branches: ["master"]
+jobs: 
+ runOnPullRequest:
+  steps:
+   - uses: actions/checkout@v1
+   - name: Running command on PR
+     run: mvn clean test
+   
