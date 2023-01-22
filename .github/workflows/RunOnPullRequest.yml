@@ -10,4 +10,5 @@ jobs:
    - uses: actions/checkout@v1
    - name: Running command on PR
      run: mvn clean test
+   - run: echo ${{github.ref}}
    
