@@ -1,5 +1,6 @@
 package BaseClass;
 
+import java.io.File;
 import java.lang.reflect.Method;
 
 import org.openqa.selenium.WebDriver;
@@ -13,6 +14,7 @@ public class BaseClass {
 
 	@BeforeMethod
 	public void nameBefore(Method method) {
+		System.out.println("Executable ? : "+new File(System.getProperty("user.dir")+"//Driver//chromedriver.exe").canExecute());
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Driver//chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
