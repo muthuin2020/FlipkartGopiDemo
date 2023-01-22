@@ -11,4 +11,7 @@ jobs:
    - name: Running command on PR
      run: mvn clean test
    - run: echo ${{github.ref}}
+   - run: echo ${{github.head_ref}}
+   - run: echo ${{github.path}}
+   - run: echo ${{github}}
    
