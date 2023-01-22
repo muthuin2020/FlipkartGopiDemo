@@ -4,6 +4,7 @@ on:
    branches: [  "master" ]
 jobs:
  Regression:
+  runs-on: ubuntu-latest
   steps:
    - uses: actions/checkou@v3
    - run: echo testing...
