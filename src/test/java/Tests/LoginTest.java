@@ -17,7 +17,7 @@ import BaseClass.BaseClass;
 
 public class LoginTest extends BaseClass{
 	
-	@Test()
+	@Test(groups="test1")
 	public void loginSuccessfull()
 	{
 		System.out.println("testing Flipkart..");
@@ -42,7 +42,7 @@ public class LoginTest extends BaseClass{
 		driver.quit();		
 	}
 	
-	@Test()
+	@Test(groups="test1")
 	public void loginWithWrongPassword()
 	{
 		driver.get("https://www.flipkart.com");
@@ -66,7 +66,7 @@ public class LoginTest extends BaseClass{
 		driver.quit();		
 	}
 	
-	@Test
+	@Test(groups="test2")
 	public void pedgog()
 	{
 		driver.get("https://uatrailways.pedgog.in/");
