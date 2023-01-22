@@ -17,7 +17,7 @@ import BaseClass.BaseClass;
 
 public class LoginTest extends BaseClass{
 	
-	@Test(enabled=false)
+	@Test()
 	public void loginSuccessfull()
 	{
 		
@@ -34,10 +34,10 @@ public class LoginTest extends BaseClass{
 		driver.quit();		
 	}
 	
-	@Test(enabled=false)
+	@Test()
 	public void loginWithWrongPassword()
 	{
-
+		driver.get("https://www.flipkart.com");
 		driver.findElement(By.xpath("//input[@class=\"_2IX_2- VJZDxU\"]")).sendKeys("7806873973");
 		driver.findElement(By.xpath("//input[@type=\"password\"]")).sendKeys("vxccvcx@123");
 		driver.findElement(By.xpath("//div[@class=\"_1D1L_j\"]")).click();
