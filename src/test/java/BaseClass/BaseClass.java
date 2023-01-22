@@ -14,12 +14,12 @@ public class BaseClass {
 
 	@BeforeMethod
 	public void nameBefore(Method method) {
+
 		File file=new File(System.getProperty("user.dir")+"//Driver//chromedriver.exe");
 		System.out.println("Executable ? : "+file.canExecute());
 		file.setExecutable(true);
 		System.out.println("Executable ? : "+file.canExecute());
-		
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Driver//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\Driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		System.out.println("Test name: " + method.getName());
