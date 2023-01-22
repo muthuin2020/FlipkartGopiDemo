@@ -7,6 +7,6 @@ on:
  
 jobs:
  testingWorkflow:
- runs-on: self-hosted
+  runs-on: self-hosted
   steps:
    - run: echo "testing .." 
