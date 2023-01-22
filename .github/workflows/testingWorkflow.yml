@@ -1,0 +1,6 @@
+name:  testing workflow
+
+jobs:
+ build:
+  steps:
+  - run: echo "testing .." 
