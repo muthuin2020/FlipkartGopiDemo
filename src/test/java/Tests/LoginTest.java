@@ -23,7 +23,7 @@ public class LoginTest extends BaseClass{
 		
 		driver.get("https://www.google.com");
 		System.out.println(driver.getTitle());
-		driver.findElement(By.xpath("//a[text()=\"தமிழ்\"]")).click();
+		driver.findElement(By.xpath("//a[text()=\"Gmail\"]")).click();
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
