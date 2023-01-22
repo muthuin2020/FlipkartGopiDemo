@@ -13,7 +13,7 @@ public class BaseClass {
 
 	@BeforeMethod
 	public void nameBefore(Method method) {
-		System.setProperty("webdriver.chrome.driver", "D:\\Github\\FlipkartDemoGopi\\Driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D://Github//FlipkartDemoGopi//Driver//chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		System.out.println("Test name: " + method.getName());
