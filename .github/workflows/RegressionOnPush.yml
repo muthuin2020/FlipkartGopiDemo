@@ -4,7 +4,7 @@ on:
    branches: [  "master" ]
 jobs:
  Regression:
-  runs-on: windows-latest
+  runs-on: self-hosted
   steps:
    - uses: actions/checkout@v1
    - run: echo testing...
