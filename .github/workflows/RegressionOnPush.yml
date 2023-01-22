@@ -3,7 +3,6 @@ on:
   push: 
    branches: ["master"]
 jobs:
-job:
 steps:
-  uses: actions/checkou@v3
-  runs: echo testing...
+  -uses: actions/checkou@v3
+  -runs: echo testing...
