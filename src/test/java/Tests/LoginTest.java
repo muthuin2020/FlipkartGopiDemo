@@ -20,7 +20,7 @@ public class LoginTest extends BaseClass{
 	@Test()
 	public void loginSuccessfull()
 	{
-		System.out.println("testing Flipkart..");
+		System.out.println("testing Google..");
 		
 		driver.get("https://www.google.com");
 		System.out.println(driver.getTitle());
@@ -45,6 +45,7 @@ public class LoginTest extends BaseClass{
 	@Test()
 	public void loginWithWrongPassword()
 	{
+		System.out.println("testing Flipkart..");
 		driver.get("https://www.flipkart.com");
 		System.out.println(driver.getTitle());
 		driver.findElement(By.xpath("//input[@class=\"_2IX_2- VJZDxU\"]")).sendKeys("7806873973");
