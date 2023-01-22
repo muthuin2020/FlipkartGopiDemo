@@ -23,7 +23,13 @@ public class LoginTest extends BaseClass{
 		
 		driver.get("https://www.google.com");
 		System.out.println(driver.getTitle());
-//		driver.findElement(By.xpath("//input[@class=\"_2IX_2- VJZDxU\"]")).sendKeys("7806873973");
+		driver.findElement(By.xpath("//a[text()=\"தமிழ்\"]")).click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 //		driver.findElement(By.xpath("//input[@type=\"password\"]")).sendKeys("Vict@123");
 //		driver.findElement(By.xpath("//div[@class=\"_1D1L_j\"]")).click();
 //		
@@ -40,8 +46,15 @@ public class LoginTest extends BaseClass{
 	{
 		driver.get("https://www.flipkart.com");
 		System.out.println(driver.getTitle());
-//		driver.findElement(By.xpath("//input[@class=\"_2IX_2- VJZDxU\"]")).sendKeys("7806873973");
-//		driver.findElement(By.xpath("//input[@type=\"password\"]")).sendKeys("vxccvcx@123");
+		driver.findElement(By.xpath("//input[@class=\"_2IX_2- VJZDxU\"]")).sendKeys("7806873973");
+		
+		driver.findElement(By.xpath("//button[text()=\"Request OTP\"]")).click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 //		driver.findElement(By.xpath("//div[@class=\"_1D1L_j\"]")).click();
 //		
 //		String inputName="My Account";
