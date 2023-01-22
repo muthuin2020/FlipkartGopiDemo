@@ -5,6 +5,7 @@ on:
    branches: ["master"]
 jobs: 
  runOnPullRequest:
+  runs-on: self-hosted
   steps:
    - uses: actions/checkout@v1
    - name: Running command on PR
