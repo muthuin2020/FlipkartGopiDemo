@@ -1,1 +1,8 @@
 name : Regression on Push
+on:
+  push: 
+   branches: ["master"]
+jobs:
+steps:
+  uses: actions/checkou@v3
+  runs: echo testing...
