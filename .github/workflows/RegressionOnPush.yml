@@ -1,4 +1,4 @@
-name : Regression on Push
+name: Regression on Push
 on:
   push: 
    branches: ["master"]
