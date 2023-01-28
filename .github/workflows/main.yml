@@ -1,0 +1,30 @@
+
+ 
+name: Demo workflow
+
+on: 
+ pull_request:
+   branches: ["master"]
+ workflow_dispatch:
+ 
+jobs: 
+ runOnPullRequest:
+  runs-on: self-hosted
+  steps:
+   - uses: actions/checkout@v1
+   - name: Running command on PR
+     run: mvn clean test
+   - run: echo ${{github}}
+   - name: Dump GitHub context
+     run: echo '${{ toJSON(github) }}'
+   - name: Dump job context
+     run: echo '${{ toJSON(job) }}'
+   - name: Dump steps context
+     run: echo '${{ toJSON(steps) }}'
+   - name: Dump runner context
+     run: echo '${{ toJSON(runner) }}'
+   - name: Dump strategy context
+     run: echo '${{ toJSON(strategy) }}'
+   - name: Dump matrix context
+     run: echo '${{ toJSON(matrix) }}'
+ 
