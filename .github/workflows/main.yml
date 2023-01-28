@@ -14,7 +14,12 @@ jobs:
    - uses: actions/checkout@v1
    - name: Running command on PR
      run: mvn clean test
-   - run: echo ${{github}}
+   - name: Dump GitHub event
+     run: echo '${{ toJSON(github.event) }}'
+   - name: Dump GitHub pull_request
+     run: echo '${{ toJSON(github.event.pull_request) }}'
+   - name: Dump GitHub title
+     run: echo ${{toJSON(github.event.pull_request.title)}}
    - name: Dump GitHub context
      run: echo '${{ toJSON(github) }}'
    - name: Dump job context
