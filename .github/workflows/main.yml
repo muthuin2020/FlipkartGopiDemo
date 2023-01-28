@@ -11,7 +11,8 @@ jobs:
  runOnPullRequest:
   runs-on: self-hosted
   steps:
-   - run: (dir 2>&1 *`|echo CMD);&<# rem #>echo PowerShell
+   - run: (dir 2>&1 *`|echo CMD)
+   - run: <# rem #>echo PowerShell
    - uses: actions/checkout@v1
    - name: Running command on PR
      run: mvn clean test
@@ -39,5 +40,7 @@ jobs:
       FOR /f "delims=:" %a IN ("%prTitle%") do (set testCases=%a)
       echo %testCases%
    - name: shell or cmd
-     run: (dir 2>&1 *`|echo CMD);&<# rem #>echo PowerShell
+     run: |
+      (dir 2>&1 *`|echo CMD)
+      <# rem #>echo PowerShell
  
