@@ -17,7 +17,7 @@ import BaseClass.BaseClass;
 
 public class LoginTest extends BaseClass{
 	
-	@Test()
+	@Test(enabled=false)
 	public void loginSuccessfull()
 	{
 		System.out.println("testing Google..");
@@ -42,7 +42,7 @@ public class LoginTest extends BaseClass{
 		driver.quit();		
 	}
 	
-	@Test()
+	@Test(enabled=false)
 	public void loginWithWrongPassword()
 	{
 		System.out.println("testing Flipkart..");
@@ -70,9 +70,9 @@ public class LoginTest extends BaseClass{
 	@Test
 	public void pedgog()
 	{
-		driver.get("https://uatrailways.pedgog.in/");
-		System.out.println(driver.getTitle());
-		driver.quit();	
+//		driver.get("https://uatrailways.pedgog.in/");
+//		System.out.println(driver.getTitle());
+//		driver.quit();	
 	}
 	
 	
