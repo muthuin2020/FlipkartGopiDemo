@@ -1,4 +1,4 @@
-name: Run on Pull request to master
+name: This is a Demo Workflow
 
 on: 
  pull_request:
