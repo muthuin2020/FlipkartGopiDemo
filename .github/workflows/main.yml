@@ -35,6 +35,6 @@ jobs:
    - name: Storing PR title
      run: |
       set prTitle=${{toJSON(github.event.pull_request.title)}}
-      FOR /f "delims=:" %a IN ("%prTitle%") do set testCases=%a
+      FOR /f "delims=:" %a IN ("%prTitle%") do (set testCases=%a)
       echo %testCases%
  
