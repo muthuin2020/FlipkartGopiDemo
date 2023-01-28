@@ -82,7 +82,7 @@ public class LoginTest extends BaseClass{
 		ChromeOptions chromeOptions = new ChromeOptions();
 		//chromeOptions.setCapability("browserVersion", "108.0.5359.100");
 		RemoteWebDriver driver=new RemoteWebDriver(url, chromeOptions);
-		System.out.println("Docker testing started...");
+		System.out.println("Docker testing started.");
 		driver.get("https://wikipedia.com");
 		System.out.println(driver.getTitle());
 		System.out.println("Docker testing done");
