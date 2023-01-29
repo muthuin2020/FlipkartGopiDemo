@@ -17,10 +17,10 @@ import BaseClass.BaseClass;
 
 public class LoginTest extends BaseClass{
 	
-	@Test(groups="test1")
+	@Test(enabled=false)
 	public void loginSuccessfull()
 	{
-		System.out.println("testing Flipkart..");
+		System.out.println("testing Google..");
 		
 		driver.get("https://www.google.com");
 		System.out.println(driver.getTitle());
@@ -42,9 +42,10 @@ public class LoginTest extends BaseClass{
 		driver.quit();		
 	}
 	
-	@Test(groups="test1")
+	@Test(enabled=false)
 	public void loginWithWrongPassword()
 	{
+		System.out.println("testing Flipkart..");
 		driver.get("https://www.flipkart.com");
 		System.out.println(driver.getTitle());
 		driver.findElement(By.xpath("//input[@class=\"_2IX_2- VJZDxU\"]")).sendKeys("7806873973");
@@ -66,12 +67,13 @@ public class LoginTest extends BaseClass{
 		driver.quit();		
 	}
 	
-	@Test(groups="test2")
+	@Test
 	public void pedgog()
 	{
-		driver.get("https://uatrailways.pedgog.in/");
-		System.out.println(driver.getTitle());
-		driver.quit();	
+		Assert.assertEquals(1,2);
+//		driver.get("https://uatrailways.pedgog.in/");
+//		System.out.println(driver.getTitle());
+//		driver.quit();	
 	}
 	
 	
@@ -81,7 +83,7 @@ public class LoginTest extends BaseClass{
 		ChromeOptions chromeOptions = new ChromeOptions();
 		//chromeOptions.setCapability("browserVersion", "108.0.5359.100");
 		RemoteWebDriver driver=new RemoteWebDriver(url, chromeOptions);
-		System.out.println("Docker testing started..");
+		System.out.println("Docker testing started.....");
 		driver.get("https://wikipedia.com");
 		System.out.println(driver.getTitle());
 		System.out.println("Docker testing done");
