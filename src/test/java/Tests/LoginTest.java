@@ -70,6 +70,7 @@ public class LoginTest extends BaseClass{
 	@Test
 	public void pedgog()
 	{
+		Assert.assertEquals(1,2);
 //		driver.get("https://uatrailways.pedgog.in/");
 //		System.out.println(driver.getTitle());
 //		driver.quit();	
